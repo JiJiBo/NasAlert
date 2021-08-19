@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="260dp"
+            android:layout_height="150dp"
+            android:layout_centerInParent="true"
+            android:minHeight="150dp"
+            app:cardCornerRadius="7dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="260dp"
+                android:layout_height="150dp">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textColor="#FF333333"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@id/tv_msg"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_msg"
+                    android:layout_width="182dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textColor="#FF999999"
+                    android:textSize="13sp"
+                    app:layout_constraintBottom_toTopOf="@id/v_line"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+                <View
+                    android:id="@+id/v_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="43dp"
+                    android:background="#FFCCCCCC"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+
+                <Button
+                    android:id="@+id/bt_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@color/transparent"
+                    android:gravity="center"
+                    android:text="确认"
+                    android:textColor="#FFFF8645"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/v_line" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</layout>
