@@ -12,12 +12,20 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity">
 
-        <com.nas.nas_step_view.NasStepView
+        <TextView
             android:id="@+id/step"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
+            android:layout_gravity="center"
+            android:background="@color/black"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:textSize="100sp"
+            app:autoSizeMaxTextSize="150sp"
+            app:autoSizeMinTextSize="3sp"
+            app:autoSizeStepGranularity="0.01sp"
+            app:autoSizeTextType="uniform"
             app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

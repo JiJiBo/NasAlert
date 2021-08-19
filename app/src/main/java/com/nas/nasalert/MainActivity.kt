@@ -13,18 +13,7 @@ class MainActivity : BugBindingBaseAppCompatActivity<ActivityMainBinding>() {
     }
 
     override fun main() {
-        mBinging.step.setListener {
-            BugLogUtils.e(it, "num")
-            if (it == 1) {
-                NasAlert.showByOneButton(this, "提示", "一个按钮", {
-                    BugLogUtils.e("ok", "one")
-                })
-            } else if (it == 2) {
-                NasAlert.showByTwoButton(this, "提示", "二个按钮", {
-                    BugLogUtils.e("ok", "two")
-                })
-            }
-        }
+
     }
 
 }
