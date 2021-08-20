@@ -12,4 +12,5 @@ include ':app'
 include ':nas-toast'
 include ':nas_step_view'
 include ':nas_run_textview'
+include ':swipebacklib'
 

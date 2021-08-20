@@ -4,6 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.10587639311043566" />
+        <entry key="app/src/main/res/layout/activity_second.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_three.xml" value="0.10587639311043566" />
         <entry key="nas-toast/src/main/res/drawable/shape_white_bg_8.xml" value="0.16111111111111112" />
         <entry key="nas-toast/src/main/res/layout/nas_one_bt.xml" value="0.11956521739130435" />
         <entry key="nas-toast/src/main/res/layout/nas_two_bt.xml" value="0.335" />
