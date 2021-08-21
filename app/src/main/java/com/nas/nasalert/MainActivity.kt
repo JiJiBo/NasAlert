@@ -17,7 +17,7 @@ class MainActivity : BugBindingBaseAppCompatActivity<ActivityMainBinding>() {
         requestWindowFeature(Window.FEATURE_NO_TITLE)
         super.onCreate(savedInstanceState)
     }
-    val swipeBackController by lazy { SwipeBackController(this) }
+
     override fun main() {
         mBinging.stepView.setMin(10)
         mBinging.stepView.setMax(100)
@@ -34,11 +34,5 @@ class MainActivity : BugBindingBaseAppCompatActivity<ActivityMainBinding>() {
         }
     }
 
-    override fun onTouchEvent(ev: MotionEvent?): Boolean {
-        if (swipeBackController.processEvent(ev)) {
-            return true;
-        } else {
-            return super.onTouchEvent(ev);
-        }
-    }
+
 }

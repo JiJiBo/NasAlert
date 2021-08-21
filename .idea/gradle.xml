@@ -14,7 +14,6 @@
             <option value="$PROJECT_DIR$/nas-toast" />
             <option value="$PROJECT_DIR$/nas_run_textview" />
             <option value="$PROJECT_DIR$/nas_step_view" />
-            <option value="$PROJECT_DIR$/swipebacklib" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

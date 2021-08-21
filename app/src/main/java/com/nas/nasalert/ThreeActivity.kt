@@ -1,19 +1,21 @@
 package com.nas.nasalert
 
-import android.app.Activity
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.MotionEvent
-import android.view.Window
+import com.nas.nasalert.databinding.ActivityThreeBinding
 
-class ThreeActivity : AppCompatActivity() {
+import com.pinyue.zcf.base.BugBindingBaseAppCompatActivity
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
 
-        setContentView(R.layout.activity_three)
+class ThreeActivity : BugBindingBaseAppCompatActivity<ActivityThreeBinding>() {
+    override fun getLayoutId(): Int {
+        return R.layout.activity_three
+    }
+
+    override fun main() {
 
     }
 
-
+    override fun bugActivityCanSwipe(): Boolean {
+        return true
+    }
 }
